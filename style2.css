@@ -4,25 +4,51 @@ body {
   line-height: 26px;
   background-color: #000000;
 }
+/* 
+기본 설정
+font : 100% 사이즈로 Courier New 폰트로 설정
+margin : 외부 여백 설정
+line-height : 줄 간격 설정
+background-color : 배경색 설정
+*/
 
 .container {
   min-width: 900px;
 }
+/* 
+container class
+min-width: 최소 너비 설정
+*/
 
 .wrapper {
   position: relative;
   overflow: auto;
 }
+/* 
+wrapper class
+position: ?
+overflow: 컨텐츠가 화면을 넘어갈 경우 스크롤 자동 생성
+*/
 
 #top {
   color: #84c754;
   padding: 15px;
 }
+/* 
+top id
+color : 텍스트 색상
+padding : 내부 여백 설정
+*/
 
 #main {
   padding: 10px;
   color: #84c754;
 }
+/*
+main id
+padding : 내부 여백
+color : 텍스트 색상 
+ */
 
 #sidebar {
   color: #ffffff;
@@ -36,6 +62,19 @@ body {
   font-size: 80%;
   line-height: 20px;
 }
+/*
+sidebar id
+color : 텍스트 색상
+border : 테두리 설정
+border-radius : 모서리 둥글게 하는 거
+padding : 내부 여백
+width : 너비
+top : 위쪽 좌표
+right : 오른쪽 좌표
+position : absolute ? 뭐 상위 어쩌고의 절대 좌표 어쩌고?
+font-size : 텍스트 크기
+line-height : 줄 간격 설정
+ */
 
 #bottom {
   border: 1px solid #ffffff;
@@ -46,33 +85,67 @@ body {
   font-size: 70%;
   line-height: 14px;
 }
+/* 
+bottom id
+border : 테두리 설정
+border-radius : 모서리 둥글게
+color : 텍스트 설정
+text-align : 텍스트 정렬
+padding : 내부 여백
+font-size : 텍스트 크기
+line-height : 줄간격
+*/
 
 #top h1,
 #top p {
   margin: 0;
 }
-
+/* 
+top id의 h1, top id의 p
+margin : 외부 여백
+*/
 .menuitem {
   color: #84c754;
   cursor: pointer;
 }
+/*
+menuitem class
+color : 텍스트 색상
+cursor : ? 커서를 마우스 포인터로 설정?
+*/
 
 .menuitem:nth-child(4) {
   color: white;
   font-weight: bold;
 }
+/*
+menuitem class의 4번째 자식?
+color : 텍스트 색상
+font-weight : 폰트 형식 
+ */
 
 .menuitem:hover {
   color: #ffffff;
 }
-
+/*
+menuitem class : hover 마우스 포인터가 위에 떠있을 경우
+color : 텍스트 색색상 
+ */
 a {
   color: #ffffff;
 }
+/*
+a tag
+color : 텍스트 색상 
+ */
 
 a:hover {
   color: #84c754;
 }
+/* 
+a tag : hover 마우스 포인터가 a태그 위에 떠있을 경우
+color : 텍스트 색상
+ */
 @media (max-width: 600px) {
   #sidebar {
     width: auto;
@@ -80,3 +153,9 @@ a:hover {
     position: relative;
   }
 }
+
+/* 
+postion : relative 현재 요소의 위치를 상대적으로 조정
+위의 코드는 화면 너비가 600px 이하일 때 #sidebar 요소에 스타일을 적용하는 예시입니다. 이렇게 하면 작은 화면에서 사이드바를
+더 적절하게 표시할 수 있습니다.
+ */
