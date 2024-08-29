@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cover</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #212529;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav a {
+        color: #adb5bd;
+        text-decoration: none;
+        margin-left: 20px;
+      }
+      nav a.active {
+        color: white;
+        border-bottom: 2px solid white;
+      }
+      main {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+      }
+      h1 {
+        font-size: 3.5rem;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: 1.25rem;
+        max-width: 600px;
+        margin-bottom: 1.5rem;
+      }
+      .btn {
+        background-color: white;
+        color: #343a40;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        border-radius: 0.3rem;
+      }
+      footer {
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Cover</div>
+      <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Cover your page.</h1>
+      <p>
+        Cover is a one-page template for building simple and beautiful home pages. Download, edit
+        the text, and add your own fullscreen background photo to make it your own.
+      </p>
+      <a href="#" class="btn">Learn more</a>
+    </main>
+
+    <footer>
+      Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by
+      <a href="https://twitter.com/mdo">@mdo</a>
+    </footer>
+  </body>
+</html>
